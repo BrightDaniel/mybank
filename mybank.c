@@ -5,7 +5,7 @@ int main()
 {
 	char option;
 	double balance = 50000.00;
-
+	double lastTransferAmount = 0.0;
 
 	/* Greeting message */
 	printf("\nHello, Welcome to Mybank. With us, Banking has been  made easy. \n");
@@ -41,23 +41,27 @@ int main()
 			{
 				case 'a':
 					printf("Option a: Transfer Money\n");
-					/* Add code to transfer money */
+					transferMoney(&balance, &lastTransferAmount);
 					break;
 
 				case 'b':
 					printf("Option b: Deposit Money\n");
 					/* Add code to deposit money */
+					depositMoney(&balance);
 					break;
 
 				case 'c':
 					printf("Option c: Check balance\n");
 					/* Add code to check balance */
+					checkBalance(balance);
 					break;
 
 				case 'd':
 					printf("Option d: Quit the program\n");
 					return 0;
 
+				default:
+					printf("Invalid option, try again. \n");
 
 			}	
 

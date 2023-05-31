@@ -1,0 +1,40 @@
+Transaction Details:
+Transaction Type: Credit Alert 
+Account Name: N/A 
+Account Number: N/A 
+Bank: N/A 
+Amount: 20000.00 
+Previous Balance: 50000.00
+Current Balance: 70000.00 
+Date: 2023-05-31 15:16:39 
+-------------------
+Transaction Details:
+Transaction Type: Debit Alert 
+Account Name: debeee 
+Account Number: 1234567890 
+Bank: first-bank 
+Amount: 49000.00 
+Previous Balance: 50000.00
+Current Balance: 1000.00 
+Date: 2023-05-31 15:18:32 
+-------------------
+Transaction Details:
+Transaction Type: Credit Alert 
+Account Name: N/A 
+Account Number: N/A 
+Bank: N/A 
+Amount: 200000.00 
+Previous Balance: 1000.00
+Current Balance: 201000.00 
+Date: 2023-05-31 15:19:55 
+-------------------
+Transaction Details:
+Transaction Type: Debit Alert 
+Account Name: daniel 
+Account Number: 1234567890 
+Bank: code_june_5th 
+Amount: 100000.00 
+Previous Balance: 201000.00
+Current Balance: 101000.00 
+Date: 2023-05-31 15:20:44 
+-------------------
