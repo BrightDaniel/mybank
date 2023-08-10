@@ -1,7 +1,15 @@
-#include <stdio.h>
-#include <time.h>
 #include "bwave.h"
-
+/**
+ * printReceipt - Prints receipt to receipt.txt file.
+ * @transactionType: Type of Transaction
+ * @accountName: Name of account
+ * @accountNumber: account number of user
+ * @bank: bank transferred to.
+ * @amount: amount transferred.
+ * @previousBalance: previous balance.
+ * @currentBalance: Current balance.
+ * Return: void
+ */
 void printReceipt(const char* transactionType, const char* accountName, const char* accountNumber, const char* bank, double amount, double previousBalance, double currentBalance)
 {
 	//Get current date and time
@@ -9,7 +17,7 @@ void printReceipt(const char* transactionType, const char* accountName, const ch
 	struct tm* current_time = localtime(&t);
 
 	//Format the date and time as a string.
-	char datetime[50];
+	char datetime[MAX_LENGTH];
 	strftime(datetime, sizeof(datetime), "%Y-%m-%d %H:%M:%S", current_time);
 
 	//Open the receipt file in append mode.

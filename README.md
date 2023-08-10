@@ -25,7 +25,7 @@ git clone https://github.com/your-username/mybank.git
 2. Compile the code using a C compiler:
 
 ```
-gcc -o mybank mybank.c
+gcc *.c -o mybank
 ```
 
 3. Run the executable:

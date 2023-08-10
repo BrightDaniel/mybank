@@ -1,11 +1,13 @@
-#include <stdio.h>
 #include "bwave.h"
-
+/**
+ * createAccount - creates account of user
+ * Return: void
+ */
 void createAccount()
 {
-	char firstname[50], lastname[50];
+	char fullName[MAX_LENGTH];
 
-	printf("Please create an account \nEnter your first and last names here: ");
-	scanf("%s %s", firstname, lastname);
+	printf("Please create an account \nEnter your full name here: ");
+	fgets(fullName, sizeof(fullName), stdin);
 
 }

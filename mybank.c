@@ -1,6 +1,8 @@
-#include <stdio.h>
 #include "bwave.h"
-
+/**
+ * main - my bank app with C.
+ * Return: 0
+ */
 int main()
 {
 	char option;
@@ -13,7 +15,7 @@ int main()
 	/* Create account */
 	createAccount();
 
-	char password[20];
+	char password[MIN_LENGTH];
 	int passwordCorrect = 0;
 
 	printf("Enter your password: ");

@@ -1,9 +1,11 @@
-#include <stdio.h>
 #include "bwave.h"
-#include <string.h>
+/**
+ * validatePassword - This functionn validates the password of user.
+ * Return: 1 if successful
+ */
 
 int validatePassword(const char* password) {
-	char val[20];
+	char val[MIN_LENGTH];
 	int value;
 	int i = 3;
 

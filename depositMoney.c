@@ -1,6 +1,8 @@
-#include <stdio.h>
 #include "bwave.h"
-
+/**
+ * depositMoney - deposit money for user
+ * Return: void
+ */
 void depositMoney(double* balance)
 {
 	double depositAmount;

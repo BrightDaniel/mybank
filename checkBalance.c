@@ -1,6 +1,8 @@
-#include <stdio.h>
 #include "bwave.h"
-
+/**
+ * checkBalance - checks current balance
+ * Return: Nothing
+ */
 
 void checkBalance(double balance)
 {
