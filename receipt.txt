@@ -1,0 +1,40 @@
+Transaction Details:
+Transaction Type: Debit Alert 
+Account Name: Chibuike Nwafor 
+Account Number: 12234454 
+Bank: fidelity 
+Amount: 2033.00 
+Previous Balance: 50000.00
+Current Balance: 47967.00 
+Date: 2023-08-09 22:11:52 
+-------------------
+Transaction Details:
+Transaction Type: Debit Alert 
+Account Name: Chibuike Nwafor  
+Account Number: 1222237784 
+Bank:  
+Amount: 40002.00 
+Previous Balance: 50000.00
+Current Balance: 9998.00 
+Date: 2023-08-09 22:50:38 
+-------------------
+Transaction Details:
+Transaction Type: Debit Alert 
+Account Name: Chibuike Nwafor 
+Account Number: 172728389 
+Bank: Fidelity bank 
+Amount: 2991.00 
+Previous Balance: 50000.00
+Current Balance: 47009.00 
+Date: 2023-08-09 22:55:13 
+-------------------
+Transaction Details:
+Transaction Type: Debit Alert 
+Account Name: Chibuike Nwafor 
+Account Number: 12238884 
+Bank: first bank 
+Amount: 20000.00 
+Previous Balance: 50000.00
+Current Balance: 30000.00 
+Date: 2023-08-09 23:17:27 
+-------------------

@@ -1,59 +1,28 @@
-#include <stdio.h>
-#include <string.h>
-
-
+#include "bwave.h"
+/**
+ * main - my bank app with C.
+ * Return: 0
+ */
 int main()
 {
 	char option;
 	double balance = 50000.00;
-
+	double lastTransferAmount = 0.0;
 
 	/* Greeting message */
 	printf("\nHello, Welcome to Mybank. With us, Banking has been  made easy. \n");
+	
+	/* Create account */
+	createAccount();
 
+	char password[MIN_LENGTH];
+	int passwordCorrect = 0;
 
-	/* Create an account - Implementing registration */
-	char firstname[50], lastname[50];
+	printf("Enter your password: ");
+	scanf("%s", password);
 
-	printf("Please create an account \nEnter your first and last names here: ");
-	scanf("%s %s", firstname, lastname);
-
-	char pass[20];
-	char val[20];
-	int value;
-	int i = 3;
-	int passwordCorrect = 0; //Flag var to track correct password validation.
-
-	printf("Create a passowrd: ");
-	scanf("%s", pass);
-
-	printf("Confirm  passowrd: ");
-	scanf("%s", val);
-
-	value = strcmp(pass, val);
-
-	if (value != 0)
-		while (i >= 0)
-		{
-			printf("\n Your passwords dont match \n");
-			printf("Try again, Re-enter password: ");
-			scanf("%s", val);
-
-			value = strcmp(pass, val);
-
-			if ( value == 0)
-			{
-				passwordCorrect = 1;
-				break;
-			}
-			if (i > 0)
-				printf("Passwords dont match. You have %d more attempts \n", i);
-			else
-				printf("Sorry. You cant create an account");
-			i--;
-		}
-	else
-		passwordCorrect = 1;
+	passwordCorrect = validatePassword(password);
+	
 
 	if (passwordCorrect)
 	{
@@ -74,23 +43,27 @@ int main()
 			{
 				case 'a':
 					printf("Option a: Transfer Money\n");
-					/* Add code to transfer money */
+					transferMoney(&balance, &lastTransferAmount);
 					break;
 
 				case 'b':
 					printf("Option b: Deposit Money\n");
 					/* Add code to deposit money */
+					depositMoney(&balance);
 					break;
 
 				case 'c':
 					printf("Option c: Check balance\n");
 					/* Add code to check balance */
+					checkBalance(balance);
 					break;
 
 				case 'd':
 					printf("Option d: Quit the program\n");
 					return 0;
 
+				default:
+					printf("Invalid option, try again. \n");
 
 			}	
 
